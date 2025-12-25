@@ -16,7 +16,7 @@ Unlike traditional keyword-based approaches, this system uses **Agentic AI (Groq
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/gm0202/AgenticAi-Reviews.git
     cd PulseGen
     ```
 
