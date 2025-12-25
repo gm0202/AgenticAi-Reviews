@@ -77,6 +77,4 @@ PulseGen/
 ```
 
 ## 🔮 Future Roadmap
-*   **Backend**: Deploy as a FastAPI service on Railway with Celery workers for async processing.
-*   **Frontend**: Next.js dashboard on Vercel for interactive data visualization (Heatmaps/Charts).
 *   **Database**: Migrate local JSON storage to PostgreSQL with pgvector.
