@@ -13,6 +13,11 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_huggingface import HuggingFaceEmbeddings
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
+try:
+    from visualization import generate_visualizations
+except ImportError:
+    # Fallback if running from root without module
+    from src.visualization import generate_visualizations
 
 # Constants
 TAXONOMY_FILE = "taxonomy.json"
@@ -202,6 +207,9 @@ def process_daily_batch(date_str: str, taxonomy_mgr: TaxonomyManager, agent: Rev
     # Persist taxonomy updates
     taxonomy_mgr.save_taxonomy()
     print(f"[DONE] Daily stats saved to {stats_file}")
+
+    # Generate Graphs and Heatmaps
+    generate_visualizations(OUTPUT_DIR, date_str)
 
 if __name__ == "__main__":
     # Test run
