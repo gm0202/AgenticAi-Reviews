@@ -1,0 +1,9 @@
+google-play-scraper
+langchain
+langchain-groq
+langchain-huggingface
+sentence-transformers
+scikit-learn
+pandas
+python-dotenv
+tabulate
