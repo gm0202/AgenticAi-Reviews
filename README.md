@@ -5,6 +5,11 @@ The **Agentic AI Review Trend Analyzer** is an intelligent system designed to sc
 
 Unlike traditional keyword-based approaches, this system uses **Agentic AI (Groq/Llama 3)** to semantically understand user intent and consolidate similar topics (e.g., merging "Rude driver" and "Impolite delivery partner" into a single category).
 
+## Live Demo
+Frontend = https://review-scrapper-nine.vercel.app/
+Backend = https://reviewscrapper-production-9fdc.up.railway.app/
+
+The Implementation is slow due to usage of free tier AI. Kindly have some patience.
 ## ✨ Features
 *   **Automated Scraper**: Fetches daily batches of reviews from the Google Play Store.
 *   **Agentic Topic Extraction**: Uses LLM (Llama 3.3-70b) to extract precise issues from raw text.
